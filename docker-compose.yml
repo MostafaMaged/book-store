@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bms:latest
+    ports:
+      - "8080:8080"
